@@ -1,0 +1,66 @@
+{
+  "approval_model": {
+    "model_type": "Logistic Regression",
+    "target": "loan_status (1=Approved, 0=Rejected)",
+    "test_sample_size": 10000,
+    "accuracy": 0.9282,
+    "precision": 0.9358,
+    "recall": 0.9603,
+    "f1": 0.9479,
+    "roc_auc": 0.9796,
+    "confusion_matrix": {
+      "true_negatives": 2752,
+      "false_positives": 448,
+      "false_negatives": 270,
+      "true_positives": 6530,
+      "matrix": [
+        [
+          2752,
+          448
+        ],
+        [
+          270,
+          6530
+        ]
+      ]
+    },
+    "parameters": {
+      "penalty": "l2",
+      "C": 1.0,
+      "solver": "lbfgs",
+      "max_iter": 1000
+    }
+  },
+  "default_model": {
+    "model_type": "Random Forest Classifier",
+    "target": "default_flag (1=Default, 0=Non-Default)",
+    "test_sample_size": 6800,
+    "accuracy": 0.8562,
+    "precision": 0.3706,
+    "recall": 0.8562,
+    "f1": 0.5173,
+    "roc_auc": 0.9336,
+    "confusion_matrix": {
+      "true_negatives": 5298,
+      "false_positives": 890,
+      "false_negatives": 88,
+      "true_positives": 524,
+      "matrix": [
+        [
+          5298,
+          890
+        ],
+        [
+          88,
+          524
+        ]
+      ]
+    },
+    "parameters": {
+      "n_estimators": 150,
+      "max_depth": 8,
+      "class_weight": "balanced",
+      "min_samples_split": 20
+    }
+  }
+}

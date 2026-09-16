@@ -1,0 +1,11 @@
+{
+  "name": "creditlens-workspace",
+  "version": "1.0.0",
+  "description": "CreditLens — Loan Approval & Credit Risk Analytics Dashboard",
+  "scripts": {
+    "dev:frontend": "cd frontend && npm run dev",
+    "build:frontend": "cd frontend && npm run build",
+    "test:backend": "pytest backend/tests"
+  },
+  "keywords": ["credit-risk", "loan-origination", "fintech", "fastapi", "react", "sqlite"]
+}
