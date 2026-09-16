@@ -48,6 +48,16 @@ export const Navbar: React.FC<NavbarProps> = ({ activeTab }) => {
           <span>50,000 Applications Loaded</span>
         </div>
 
+        <a
+          href="/CreditLens_Complete_Project_Guide.pdf"
+          download="CreditLens_Complete_Project_Guide.pdf"
+          className="flex items-center gap-1.5 px-3 py-1 rounded-md bg-teal-500/10 hover:bg-teal-500/20 text-teal-400 border border-teal-500/30 transition-colors font-medium text-xs shadow-sm"
+          title="Download Complete Technical & Operational PDF Guide"
+        >
+          <Activity className="w-3.5 h-3.5" />
+          <span>PDF Guide</span>
+        </a>
+
         <div className="flex items-center gap-1.5 text-slate-400 font-mono text-[11px] border-l border-slate-800 pl-3">
           <Clock className="w-3 h-3 text-slate-500" />
           <span>{currentDate}</span>
